@@ -1,0 +1,80 @@
+
+body{
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.form_registr{
+    background: url("../img/bg.jpg")black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.form_block{
+    width: 320px;
+    height: 350px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 7%;
+}
+.h2_form{
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 24px;
+    text-transform: uppercase;
+}
+.pn_regi_input, .pass_regi_input, .pass_repeat_regis_input{
+    border-radius: 10px 10px;
+    display: inline-block;
+    width: 270px;
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 3px 6px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+}
+.pn_regi_input:focus, .pass_regi_input:focus, .pass_repeat_regis_input:focus{
+    border: 3px solid deepskyblue;
+}
+
+.btn_regis{
+    border-radius: 10px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 45px;
+    border: 2px solid white;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+}
+.btn_regis{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btn_regis:hover{
+    border: 2px solid deepskyblue;
+    color: deepskyblue;
+
+
+}
+
+
+@media (max-width: 320px) {
+    .form_block{
+        border: none;
+        width: 280px;
+    }
+    .pass_regi_input, .pass_repeat_regis_input, .pn_regi_input, .btn_regis{
+        width: 260px;
+    }
+}

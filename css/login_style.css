@@ -1,0 +1,112 @@
+
+body{
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Ф О Р М А     ------    Л О Г И Н
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.form_login{
+    background: url("../img/bg.jpg")black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.form_block{
+    width: 320px;
+    height: 330px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 7%;
+}
+.h2_form{
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 24px;
+    text-transform: uppercase;
+}
+.pass_input, .phone_number_input{
+    border-radius: 10px 10px;
+    display: inline-block;
+    width: 270px;
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 3px 6px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+
+}
+.pass_input:focus, .phone_number_input:focus{
+    border: 3px solid deepskyblue;
+
+}
+.bt_lg{
+    border-radius: 10px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 45px;
+    border: 2px solid white;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+}
+.btn_login{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btn_login:hover{
+    color: deepskyblue;
+}
+.bt_lg:hover{
+    border: 2px solid deepskyblue;
+
+}
+.regist_block{
+    margin-bottom: 10px;
+}
+.a_registr{
+    text-decoration: none;
+    color: #adb5bd;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: all 0.2s;
+    opacity: 0.8;
+
+}
+.txt_registr{
+    color: #adb5bd;
+    opacity: 0.9;
+
+}
+.a_registr:hover{
+    color: deepskyblue;
+}
+
+
+/*  М Е Д И А
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+@media (max-width: 330px) {
+    .form_block{
+        border: none;
+        width: 280px;
+    }
+    .a_registr{
+        font-size: 14px;
+    }
+    .txt_registr{
+        font-size: 14px;
+    }
+    .pass_input, .phone_number_input, .bt_lg{
+        width: 260px;
+    }
+}
