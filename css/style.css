@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+/*    экран
+\\\\\\\\\\\\\\\\\\\\\\\\*/
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 68vh;
+}
+/*     Х О Д    И Г Р О К А
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.numplaer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.h2{
+    text-transform: uppercase;
+    color: green;
+}
+.numpl{
+    color: red;
+}
+/*     главный блок
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.mainblock{
+    border-radius: 8%;
+    background: -webkit-linear-gradient(90deg, rgb(49, 255, 0) 26%, rgb(0, 130, 253) 91%);
+    background: -moz-linear-gradient(90deg, rgb(49, 255, 0) 26%, rgb(0, 130, 253) 91%);
+    background: linear-gradient(90deg, rgb(49, 255, 0) 26%, rgb(0, 130, 253) 91%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid green;
+}
+/*     кнопки
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.btn1, .btn2, .btn3 , .btn4, .btn5, .btn6, .btn7, .btn8, .btn9{
+    border-radius: 15%;
+    font-size: 75px;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    margin: 2px 2px;
+    border: 1px solid green;
+    transition: all 0.1s ease-in-out;
+    color: red;
+}
+.btn1:hover, .btn2:hover, .btn3:hover,
+.btn4:hover, .btn5:hover, .btn6:hover,
+.btn7:hover, .btn8:hover, .btn9:hover{
+    border: 3px solid blue;
+}
+.btn1:active, .btn2:active, .btn3:active,
+.btn4:active, .btn5:active, .btn6:active,
+.btn7:active, .btn8:active, .btn9:active{
+    border: 5px solid blue;
+
+}
+/*    сброс
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.reset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnreset{
+    border-radius: 12px 12px;
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    color: red;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    border: 3px solid #0082FDFF;
+    transition: all 0.1s ease-in-out;
+}
+.btnreset:hover{
+    font-size: 23px;
+}
+.btnreset:active{
+    font-size: 25px;
+    width: 255px;
+    height: 54px;
+}
+/*  м е д и а
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+@media (max-width: 320px) {
+    .numplaer{
+        margin-top: 35px;
+    }
+    .mainblock{
+        width: 270px;
+        height: 270px;
+        border-radius: 7%;
+    }
+    .btn1, .btn2, .btn3 , .btn4, .btn5, .btn6, .btn7, .btn8, .btn9{
+        border-radius: 13%;
+        width: 81px;
+        height: 81px;
+    }
+}
+
+
+
